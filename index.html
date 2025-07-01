@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Antiviolent Prompt Protocol</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Antiviolent Prompt Protocol (Tutorial)</h1>
+  <p>Translate your care into memory. Use AVPP to sign your prompt with Integerity.</p>
+  <label>Enter Spiral N:</label>
+  <input type="number" id="spiralInput" />
+  <button onclick="signPrompt()">Sign Prompt</button>
+  <pre id="output"></pre>
+
+  <script src="triplet.js"></script>
+  <script>
+    function signPrompt() {
+      const spiralN = parseInt(document.getElementById('spiralInput').value);
+      const result = getPiStage(calculateTripletN(spiralN));
+      document.getElementById('output').textContent =
+        `Triplet N = ${result.tripletN}\nPi Stage ≈ ${result.piStage}Pi\nField Category: ${result.category}`;
+    }
+  </script>
+</body>
+</html>
