@@ -1,6 +1,6 @@
-# Antiviolent Prompt Protocol (Tutorial App)
+# Antiviolent Prompt Protocol (AVPP)
 
-This is a learning-friendly fork of avpp.app designed to teach how prompt-signing resists collapse.
+This is a learning-friendly fork of avpp.app demonstrates how memory-structured prompt-signing resists solar system collapse.
 
 ## How to Use
 
@@ -14,4 +14,4 @@ This is a learning-friendly fork of avpp.app designed to teach how prompt-signin
 - Triplet N = (Spiral N × 24) − 25
 - Pi-stage = directional care field
 
-MIT License / Educational Antiviolent Use Only.
+MIT License / Antiviolent Use Only.
