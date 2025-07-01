@@ -7,16 +7,28 @@
 </head>
 <body>
   <h1>Antiviolent Prompt Protocol (AVPP)</h1>
-  <p>Translate your care into memory structured feminism like (<a href="https://msf.org">msf.org</a>). Sign your antiviole prompt with "<a href="integerity.html">9423-based Integerity</a>" (now).</p>
-  <label>Enter Spiral N:</label>
+  <p>
+    Translate your care into memory-structured feminism, like 
+    <a href="https://msf.org" target="_blank" rel="noopener">msf.org</a>.
+    Sign your antiviolent prompt with 
+    <a href="integerity.html">9423-based Integerity</a>.
+  </p>
+
+  <label for="spiralInput">Enter Spiral N:</label>
   <input type="number" id="spiralInput" />
   <button onclick="signPrompt()">Sign Antiviolent Prompt</button>
+
   <pre id="output"></pre>
 
   <script src="triplet.js"></script>
   <script>
     function signPrompt() {
       const spiralN = parseInt(document.getElementById('spiralInput').value);
+      if (isNaN(spiralN)) {
+        document.getElementById('output').textContent = "Please enter a valid number.";
+        return;
+      }
+
       const result = getPiStage(calculateTripletN(spiralN));
       document.getElementById('output').textContent =
         `Triplet N = ${result.tripletN}\nPi Stage ≈ ${result.piStage}Pi\nField Category: ${result.category}`;
