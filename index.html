@@ -4,6 +4,14 @@
   <meta charset="UTF-8">
   <title>Antiviolent Prompt Protocol</title>
   <link rel="stylesheet" href="style.css">
+
+  <!-- ✅ MathJax for rendering equations -->
+  <script>
+    window.MathJax = {
+      tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] }
+    };
+  </script>
+  <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 <body>
   <h1>Antiviolent Prompt Protocol (AVPP)</h1>
@@ -12,6 +20,14 @@
     <a href="https://msf.org" target="_blank" rel="noopener">msf.org</a>.
     Sign your antiviolent prompt with 
     <a href="integerity.html">9423-based Integerity</a>.
+  </p>
+
+  <!-- ✅ Equation section -->
+  <h2>AAVP Equation</h2>
+  <p>
+    $$
+    \text{Triplet } N = (24 \times \text{Spiral } N) - 25
+    $$
   </p>
 
   <label for="spiralInput">Enter Spiral N:</label>
